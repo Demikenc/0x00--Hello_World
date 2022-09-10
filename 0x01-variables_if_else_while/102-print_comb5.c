@@ -21,7 +21,6 @@ int digit, innerDigit;
 		for (innerDigit = digit + 1; innerDigit <= 99; innerDigit++)
 
 		{
-
 			putchar((digit / 10) + '0');
 
 			putchar((digit % 10) + '0');
@@ -33,25 +32,15 @@ int digit, innerDigit;
 			putchar((innerDigit % 10) + '0');
 
 			if (innerDigit == 99 && digit == 98)
-
 			{
-
 				continue;
-
 			}
 
 			putchar(',');
-
 			putchar(' ');
 
-
-
 		}
-
 	}
-
 	putchar('\n');
-
-	return (0);
-
+return (0);
 }
