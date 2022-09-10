@@ -23,6 +23,6 @@ for (tens = 0; tens <= 9; tens++)
 			}
 		}
 	}
-putchar('\n');
+		putchar('\n');
 return (0);
 }
