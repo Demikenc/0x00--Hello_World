@@ -4,21 +4,15 @@
 
 #include <time.h>
 
-
-
 /**
- *
- *  * main - Entry point
- *
- *   * Return: Always 0 (Success)
- *
- *    */
+ * main - Entry point
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 
 {
-
-	int digit, innerDigit;
+int digit, innerDigit;
 
 	for (digit = 0; digit <= 98; digit++)
 
