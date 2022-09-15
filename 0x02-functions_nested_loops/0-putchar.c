@@ -11,7 +11,6 @@ int main()
 
 	char ch = start;
 
-	While(ch != end)
 	{
 		putcahr(ch);
 		ch++;
