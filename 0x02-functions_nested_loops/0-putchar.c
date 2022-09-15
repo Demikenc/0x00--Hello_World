@@ -1,17 +1,21 @@
-#include "<main.h>"
-/**
- * main - Print the word "Holberton"
- * Return: Always 0 (Success)
+#include <stdio.h>
+/** ste both the starting and ending alphabet
+ * initialize ch with the starting alphabet as 
+ * prin out characters from the initial value of ch till befor ee.
  */
 
-
 int main()
-	
 {
-	char ch = '1';
-	for (ch = '1'; ch <= '9'; ch++)
-	
-		_putchar(ch);
-		_putchar('\n');
-return (0);
+	char start = 'a';
+	char end =  'e';
+
+	char ch = start;
+
+	While(ch != end)
+	{
+		putcahr(ch);
+		ch++;
+	}
+return 0;
 }
+	
