@@ -1,20 +1,39 @@
-#include <stdio.h>
-/** ste both the starting and ending alphabet
- * initialize ch with the starting alphabet as 
- * prin out characters from the initial value of ch till befor ee.
- */
+#include "main.h"
 
-int main()
+
+
+/**
+ *
+ * * main - Print the word "_putchar"
+ *
+ * *
+ *
+ * * Return: Always 0 (Success)
+ *
+ * */
+
+
+
+int main(void)
+
 {
-	char start = 'a';
-	char end =  'e';
 
-	char ch = start;
+		int i;
 
-	{
-		putcahr(ch);
-		ch++;
-	}
-return 0;
+			char p[] = "_putchar";
+
+
+
+				for (i = 0; i < 9; i++)
+
+							{
+
+										_putchar(p[i]);
+
+												}
+_
+						_putchar('\n');
+
+							return (0);
+
 }
-	
