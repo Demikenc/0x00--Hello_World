@@ -1,5 +1,4 @@
-#include "<iostream>"
-namespace std;
+#include "<stdio.h>"
 /**
  * main - Print the word "Holberton"
  * Return: Always 0 (Success)
@@ -9,12 +8,10 @@ namespace std;
 int main()
 	
 {
-	int i;
-	char p[] = "Holberton";
-		for (i = 0; i < 9; i++)
-		{
-		_putchar(p[i]);
-		}
-	_putchar('\n');
+	char ch = '1';
+	for (ch = '1'; ch <= '9'; ch++)
+	
+		_putchar(ch);
+		_putchar('\n');
 return (0);
 }
