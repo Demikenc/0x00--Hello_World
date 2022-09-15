@@ -1,5 +1,5 @@
 #ifndef MAIN_H                                                                                                                  
-#define MAIN_H                                                                                                                                                                                                                                      
+#define MAIN_H                                                                                                                                                                                                                                    
                                                                                                                   
 int _putchar(char );                                                                                                                                                                                                                                     
 void print_alphabet(void);                                                                                                                                                                                                                                         
@@ -16,42 +16,7 @@ int _islower(int c);
                                                                                                                                       
 int _isalpha(int c);                                                                                                                  
                                                                                                                                       
-int print_sign(int n);                                                                                                                
-                                                                                                                                      
-int _abs(int);#ifndef MAIN_H                                                                                                                        
-#define MAIN_H                                                                                                                        
-                                                                                                                                      
-i/**                                                                                                                                   
- * * _putchar - writes the character c to stdout                                                                                         
- * * @c: The character to print                                                                                                          
- * *                                                                                                                                     
- * * Return: On success 1.                                                                                                               
- * * On error, -1 is returned, and errno is set appropriately.                                                                           
- * */                                                                                                                                    
-                                                                                                                                      
-int _putchar(char c);                                                                                                                 
-                                                                                                                                      
-                                                                                                                                      
-/**                                                                                                                                   
- * * print_alphabet - Print lowercase alphabets                                   *                                                     \
- *                          * Return: void.                                                                */                            
-                                                                                                                                      
-void print_alphabet(void);                                                                                                            
-                                                                                                                                      
-                                                                                                                                      
-/**                                                                                                                                   
-  print_alphabet_x10 - Print lowercase alphabets 10 times                                                                             
- * *                                                                                                                                     
- * * Return: void.                                                                                                                       
- * */                                                                                                                                    
-                                                                                                                                      
-void print_alphabet_x10(void);                                                                                                        
-                                                                                                                                      
-int _islower(int c);                                                                                                                  
-                                                                                                                                      
-int _isalpha(int c);                                                                                                                  
-                                                                                                                                      
-int print_sign(int n);                                                                                                                
+int print_sign(int n);                                                                                                                                                                    
                                                                                                                                       
 int _abs(int);
 
