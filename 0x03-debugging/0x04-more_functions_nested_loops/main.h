@@ -1,8 +1,5 @@
-#ifndef _HOLBERTON_H_
-
-#define _HOLBERTON_H_
-
-
+#ifndef "main.h"
+#define "stdio"
 
 int _putchar(char c);
 
