@@ -31,7 +31,7 @@ int main(void)
 										_putchar(p[i]);
 
 												}
-_
+
 						_putchar('\n');
 
 							return (0);
