@@ -2,7 +2,9 @@
 #define MAIN_H                                                                                                                                                                                                                                    
                                                                                                                   
 int _putchar(char );                                                                                                                                                                                                                                     
-void print_alphabet(void);                                                                                                                                                                                                                                         
+void print_alphabet(void);
+
+int _islower(int c);
                                                                                                                                       
 /**                                                                                                                                   
  * * print_alphabet_x10 - Print lowercase alphabets 10 times                                                                             
