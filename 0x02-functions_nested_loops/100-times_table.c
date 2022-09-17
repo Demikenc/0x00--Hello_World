@@ -1,6 +1,5 @@
 #include "main.h"
-
-
+#include <stdio>
 
 /**
  * print_times_table - Prints the n times table
