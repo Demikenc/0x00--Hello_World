@@ -1,24 +1,30 @@
-#include<stdio.h>
 #include "main.h"
-#include <stdlib.h>
+
 
 
 /**
-*main - random password generator for 101-crackme
-*Return: always 0
+* _atoi - converts a string to an integer
+*   * @s: string to convert
+* Return: value of integer
 */
-int main(void)
+
+int _atoi(char *s)
+
 {
-	char str[10] = "122";
-int x = atoi(str);
-	printf("Converting '122': %d\n", x);
-
-	char str2[10] = "Hello!";
-		x = atoi(str2);
-	printf("Converting 'Hello!': %d\n", x);
-
-	char str3[10] = "99Hello!";
-		x = atoi(str3);
-	printf("Converting '99Hello!': %d\n", x);
-return (0);
+int i, j, n, m;
+i = n = 0;
+m = 1;
+while ((*(s + i) < '0' || *(s + i) > '9') && (*(s + i) != '\0'))
+{
+if (*(s + i) == '-')
+m *= -1;
+i++;
+}
+j = i;
+while ((*(s + j) >= '0') && (*(s + j) <= '9'))
+{
+n = n * 10 + m * (*(s + j) -'0');
+j++;
+}
+return (n);
 }
