@@ -13,12 +13,12 @@ int main(void)
 int x = atoi(str);
 	printf("Converting '122': %d\n", x);
 
-char str2[10] = "Hello!";
-x = atoi(str2);
+	char str2[10] = "Hello!";
+		x = atoi(str2);
 	printf("Converting 'Hello!': %d\n", x);
 
-char str3[10] = "99Hello!";
-x = atoi(str3);
+	char str3[10] = "99Hello!";
+		x = atoi(str3);
 	printf("Converting '99Hello!': %d\n", x);
 return (0);
 }
