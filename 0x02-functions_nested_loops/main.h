@@ -6,6 +6,7 @@ void print_alphabet(void);
 
 int _islower(int c);
                                                                                                                                       
+void print_times_table(int n);
 /**                                                                                                                                   
  * * print_alphabet_x10 - Print lowercase alphabets 10 times                                                                             
  * *                                                                                                                                     
