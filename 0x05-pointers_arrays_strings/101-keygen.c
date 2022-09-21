@@ -19,7 +19,7 @@ char p[58];
 srand(time(NULL));
 while (s != 2772)
 {
-i = k = s = 0;
+i = k = s = 1;
 while ((2772 - 122) > s)
 {
 j = rand() % 62;
