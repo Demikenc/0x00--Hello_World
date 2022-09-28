@@ -17,7 +17,9 @@ if (end >= start)
 mid = start + (end - start) / 2;
 if (mid * mid == m)
 return (mid);
+
 /* following binary search */
+
 if (mid * mid > m)
 return (sqtRecursive(start, mid - 1, m));
 if (mid * mid < m)
