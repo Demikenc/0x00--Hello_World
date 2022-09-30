@@ -6,9 +6,10 @@
  * return: 0
  */
 
-Int main(int  argc, char *argv[])
+int main(int  argc, char *argv[])
 {
-	While (argc--)
-		Printf("%s\n", *argv++);
-	return(0)
+	while
+	(argc--);
+	printf("%s\n", *argv++);
+	return (0);
 }
