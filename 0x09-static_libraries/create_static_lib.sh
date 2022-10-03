@@ -1,7 +1,6 @@
 #!/bin/bash
 
 gcc -c *.c
-
-liball.a *.o
+ar -rc liball.a *.o
 ranlib liball.a
 
