@@ -8,10 +8,10 @@
 
 
 int main(int argc, char *argv[])
-
 {
-int counter;
-for (counter = 0; counter < argc; counter++)
-printf("argv[%2d]:%d\n", counter, *argv[counter]);
+int counter = argc - 1;
+*argv = *argv;
+
+printf("%d\n", counter);
 return (0);
 }
