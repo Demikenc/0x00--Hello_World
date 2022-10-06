@@ -3,7 +3,6 @@
 
 
 /**
- *
  *  * string_nconcat - concatenates two strings.
  *   * @s1: first string to copy
  *    * @s2: second string to copy
