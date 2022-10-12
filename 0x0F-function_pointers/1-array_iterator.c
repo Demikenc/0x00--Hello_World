@@ -3,7 +3,8 @@
 
 
 /**
- *  * array_iterator - executes a func given as a param on each element of array
+ *  * array_iterator - executes a func given as a param 
+ *  * on each element of array
  *  * @array: array to execute func on
  *  * @size: size of array
  *     * @action: pointer to the func to use
