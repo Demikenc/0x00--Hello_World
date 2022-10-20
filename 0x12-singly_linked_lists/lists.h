@@ -18,9 +18,6 @@
  *    * @len: length of the string
  *
  *     * @next: points to the next node
- *
- *      *
- *
  *       * Description: All prototypes used in the singly linked directory
  *
  *        * are contained here and is part of the necessities for succesfull
