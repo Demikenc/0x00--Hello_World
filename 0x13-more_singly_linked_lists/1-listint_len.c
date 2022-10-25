@@ -15,17 +15,17 @@
  *
  */
 
-size_t list_len(const list_t *h)
+size_t list_len(const listint_t *h)
 
 {
-	size_t elements = 0;
+	size_t nodenum = 0;
 	while (h)
 	{
-	elements++;
+	nodenum++;
 	h = h->next;
 		}
 
 
 
-return (elements);
+return (nodenum);
 }
