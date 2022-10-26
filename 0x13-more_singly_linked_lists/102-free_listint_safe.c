@@ -1,69 +1,74 @@
 #include "lists.h"
 
 /**
- *  * print_listint_safe - function that prints a linked list with a loop safely.
+ *  * free_listint_safe - frees a linked list
  *
- *   * @head: pointer to the 1st node of the linked list
+ *   * @h: pointer to the first node in the linked list
  *
- *    * Return: new_node
+ *    * Return: number of elements in the freed list
+ *
  */
 
-size_t print_listint_safe(const listint_t *head)
+size_t free_listint_safe(listint_t **h)
 
 {
 
-		const listint_t *tmp_n = NULL;
+		size_t len = 0;
 
-			const listint_t *l_n = NULL;
+			int diff;
 
-				size_t counter = 0;
-
-					size_t new_n;
+				listint_t *temp;
 
 
 
-						tmp_n = head;
+					if (!h || !*h)
 
-							while (tmp_n)
+								return (0);
 
-									{
 
-												printf("[%p] %d\n", (void *)tmp_n, tmp_n->n);
 
-														counter++;
+						while (*h)
 
-																tmp_n = tmp_n->next;
+								{
 
-																		l_n = head;
+											diff = *h - (*h)->next;
 
-																				new_n = 0;
+													if (diff > 0)
 
-																						while (new_n < counter)
+																{
 
-																									{
+																				temp = (*h)->next;
 
-																													if (tmp_n == l_n)
+																							free(*h);
 
-																																	{
+																										*h = temp;
 
-																																						printf("-> [%p] %d\n", (void *)tmp_n, tmp_n->n);
+																													len++;
 
-																																										return (counter);
+																															}
 
-																																													}
+															else
 
-																																l_n = l_n->next;
+																		{
 
-																																			new_n++;
+																						free(*h);
 
-																																					}
+																									*h = NULL;
 
-																								if (!head)
+																												len++;
 
-																												exit(98);
+																															break;
 
-																									}
+																																	}
 
-								return (counter);
+																}
+
+
+
+							*h = NULL;
+
+
+
+								return (len);
 
 }
