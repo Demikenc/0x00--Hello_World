@@ -44,7 +44,7 @@ size_t print_listint_safe(const listint_t *head)
 
 																													if (tmp_n == l_n)
 
-																													{																														{
+																																	{
 
 																																						printf("-> [%p] %d\n", (void *)tmp_n, tmp_n->n);
 
