@@ -47,8 +47,7 @@ node = malloc(sizeof(listint_t));
 	temp = temp->next;
 	i++;
 	}
-			node->next = temp->next;
-		temp->next = node;
-										return (node);
-
+	node->next = temp->next;
+	temp->next = node;
+return (node);
 }
