@@ -30,26 +30,26 @@ node = malloc(sizeof(listint_t));
 					node->n = n;
 					node->next = NULL;
 		if (!*head && !idx)
-			{	
-				*head = node;
-	return (node);
-											}
-	else if (!*head && idx)
-	return (NULL);
-		else if (!idx)
-											{
+		{
+		*head = node;
+		return (node);
+		}
+		else if (!*head && idx)
+			return (NULL);
+				else if (!idx)
+										{
 
 											node->next = temp;
-											*head = node;
-										return (node);
+			*head = node;
+return (node);
 												}
-while (i < (idx - 1))
+			while (i < (idx - 1))
 												{
 												temp = temp->next;
 												i++;
 													}
 												node->next = temp->next;
 												temp->next = node;
-											return (node);
+										return (node);
 
 }
