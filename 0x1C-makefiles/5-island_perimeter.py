@@ -1,57 +1,26 @@
 #!/usr/bin/python3
-'''
-Create a function def island_perimeter(grid):
-that returns the perimeter of the island described in grid:
-'''
-
-
-def neighbors(grid, up, down, row_neighbors, col_neighbors):
-    '''
-    Return number of
-    sides of the lake
-    '''
-    num_of_sides = 0
-
-    '''
-    up
-    '''
-    if up > 0 and grid[up - 1][down]:
-        num_of_sides += 1
-
-    '''
-    down
-    '''
-    if up < row_neighbors - 1 and grid[up + 1][down]:
-        num_of_sides += 1
-
-    '''
-    left
-    '''
-    if down > 0 and grid[up][down - 1]:
-        num_of_sides += 1
-
-    '''
-    right
-    '''
-    if down < col_neighbors - 1 and grid[up][down + 1]:
-        num_of_sides += 1
-
-    return num_of_sides
+""" Module that contains the island_perimeter function """
 
 
 def island_perimeter(grid):
-    '''
-    Return perimiter of
-    lake of ones inside
-    lake of zeros
-    '''
-    perimiter_count = 0
-    row_length = len(grid)
-    col_length = len(grid[0])
+    """ Function that returns the perimeter of island described in grid """
+    perimeter = 0
 
-    for row in range(0, row_length):
-        for col in range(0, col_length):
-            if grid[row][col]:
-                perimiter_count += (4 - neighbors(grid, row, col,
-                                                  row_length, col_length))
-    return perimiter_count
+    nrows = len(grid)
+
+    if grid != []:
+        ncolumns = len(grid[0])
+
+    for a in range(nrows):
+        for b in range(ncolumns):
+            if grid[a][b] == 1:
+                if (a - 1) == -1 or grid[a - 1][b] == 0:
+                    perimeter += 1
+                if (a + 1) == nrows or grid[a + 1][b] == 0:
+                    perimeter += 1
+                if (b - 1) == -1 or grid[a][b - 1] == 0:
+                    perimeter += 1
+                if (b + 1) == ncolumns or grid[a][b + 1] == 0:
+                    perimeter += 1
+
+    return perimeter
